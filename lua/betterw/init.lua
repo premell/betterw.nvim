@@ -1,6 +1,6 @@
-local M= {}
+local M = {}
 
-M.BetterW = function()
+function M.BetterW()
 	local line_length = #vim.api.nvim_get_current_line()
 	local position_before = vim.api.nvim_win_get_cursor(0)
 
