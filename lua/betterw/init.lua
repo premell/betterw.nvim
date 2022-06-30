@@ -28,6 +28,8 @@ function M.setup()
   ]])
 end
 
+print("LER")
+
 M.setup()
 
 return M
