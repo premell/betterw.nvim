@@ -18,6 +18,7 @@ BetterW.jump = function()
 end
 
 function setup()
+  print("HELLO AGAIN")
   vim.cmd([[
     nnoremap w <cmd>lua require("betterw").jump()<CR>
     onoremap w e
