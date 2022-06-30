@@ -18,7 +18,6 @@ function M.BetterW()
 end
 
 function M.setup()
-  print("HERE")
   vim.cmd([[
     nnoremap w <cmd>lua require("betterw").BetterW()<CR>
     onoremap w e
@@ -27,8 +26,6 @@ function M.setup()
     vnoremap W E
   ]])
 end
-
-print("LER")
 
 M.setup()
 
