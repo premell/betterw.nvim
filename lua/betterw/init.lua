@@ -27,4 +27,6 @@ function BetterW.setup()
   ]])
 end
 
+BetterW.setup()
+
 return BetterW
