@@ -1,6 +1,6 @@
-local BetterW = {}
+local M= {}
 
-BetterW.jump = function()
+M.BetterW = function()
 	local line_length = #vim.api.nvim_get_current_line()
 	local position_before = vim.api.nvim_win_get_cursor(0)
 
@@ -17,9 +17,10 @@ BetterW.jump = function()
 	end
 end
 
-function BetterW.setup()
+function M.setup()
+  print("HERE")
   vim.cmd([[
-    nnoremap w <cmd>lua require("betterw").jump()<CR>
+    nnoremap w <cmd>lua require("betterw").BetterW()<CR>
     onoremap w e
     vnoremap w e
     onoremap W E
@@ -27,6 +28,6 @@ function BetterW.setup()
   ]])
 end
 
-BetterW.setup()
+M.setup()
 
-return BetterW
+return M
