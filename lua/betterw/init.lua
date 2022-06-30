@@ -17,14 +17,12 @@ BetterW.jump = function()
 	end
 end
 
-function BetterW.setup()
-  vim.cmd([[
-    nnoremap w <cmd>lua require("betterw").jump()<CR>
-    onoremap w e
-    vnoremap w e
-    onoremap W E
-    vnoremap W E
-  ]])
-end
+vim.cmd([[
+  nnoremap w <cmd>lua require("betterw").jump()<CR>
+  onoremap w e
+  vnoremap w e
+  onoremap W E
+  vnoremap W E
+]])
 
 return BetterW
